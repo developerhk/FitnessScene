@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10102" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10080"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="F0G-S8-8ez" customClass="DetailView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="maingray.png" translatesAutoresizingMaskIntoConstraints="NO" id="H0J-F5-Ran">
+                    <rect key="frame" x="-47" y="0.0" width="97" height="107"/>
+                </imageView>
+                <button opaque="NO" tag="20" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEd-HG-oDN">
+                    <rect key="frame" x="59" y="0.0" width="97" height="107"/>
+                    <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="18"/>
+                    <state key="normal" backgroundImage="mainboyp.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionPressButton:" destination="F0G-S8-8ez" eventType="touchUpInside" id="SM3-B8-H1l"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="24" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Odv-VO-utz">
+                    <rect key="frame" x="164" y="0.0" width="97" height="107"/>
+                    <state key="normal" backgroundImage="main_jkzd">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionPressButton:" destination="F0G-S8-8ez" eventType="touchUpInside" id="ZLh-lf-OG2"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="maingray.png" translatesAutoresizingMaskIntoConstraints="NO" id="kT2-gm-2Or">
+                    <rect key="frame" x="270" y="0.0" width="97" height="107"/>
+                </imageView>
+                <button opaque="NO" tag="23" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAJ-JJ-YMO">
+                    <rect key="frame" x="7" y="91" width="97" height="107"/>
+                    <state key="normal" backgroundImage="main_mjjt">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" backgroundImage="main_mjjt_s"/>
+                    <connections>
+                        <action selector="actionPressButton:" destination="F0G-S8-8ez" eventType="touchUpInside" id="jMs-JV-TzI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="22" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6BP-q8-ZNR">
+                    <rect key="frame" x="112" y="91" width="97" height="107"/>
+                    <state key="normal" backgroundImage="main_jtpm">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionPressButton:" destination="F0G-S8-8ez" eventType="touchUpInside" id="u3T-Tf-URj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="27" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="GMy-Ag-3Kd">
+                    <rect key="frame" x="216" y="91" width="97" height="107"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" backgroundImage="main_xlfd">
+                        <color key="titleColor" red="0.01176470588" green="0.01176470588" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" backgroundImage="main_xlfd_s"/>
+                    <connections>
+                        <action selector="actionPressButton:" destination="F0G-S8-8ez" eventType="touchUpInside" id="ddf-g4-ydZ"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="maingray.png" translatesAutoresizingMaskIntoConstraints="NO" id="1nj-1k-Ps9">
+                    <rect key="frame" x="-47" y="182" width="97" height="107"/>
+                </imageView>
+                <button opaque="NO" tag="25" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rAk-Si-rQF">
+                    <rect key="frame" x="59" y="182" width="97" height="107"/>
+                    <state key="normal" backgroundImage="main_gbcp">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionPressButton:" destination="F0G-S8-8ez" eventType="touchUpInside" id="otg-Yq-pFN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdE-gM-IHC">
+                    <rect key="frame" x="163" y="182" width="97" height="107"/>
+                    <state key="normal" backgroundImage="main_jtzy">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionPressButton:" destination="F0G-S8-8ez" eventType="touchUpInside" id="wXy-As-2ez"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="maingray.png" translatesAutoresizingMaskIntoConstraints="NO" id="MeZ-q0-fht">
+                    <rect key="frame" x="270" y="182" width="97" height="107"/>
+                </imageView>
+                <button opaque="NO" tag="34" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="En4-Q0-gva">
+                    <rect key="frame" x="7" y="275" width="97" height="107"/>
+                    <state key="normal" backgroundImage="mainlowblue.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionPressButton:" destination="F0G-S8-8ez" eventType="touchUpInside" id="Qtf-SU-2vv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="30" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUR-sO-oQH">
+                    <rect key="frame" x="111" y="275" width="97" height="107"/>
+                    <state key="normal" backgroundImage="mainlowblue.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionPressButton:" destination="F0G-S8-8ez" eventType="touchUpInside" id="ybA-6C-nvA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="31" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47P-fB-u2R">
+                    <rect key="frame" x="216" y="275" width="97" height="107"/>
+                    <state key="normal" backgroundImage="mainlowblue.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionPressButton:" destination="F0G-S8-8ez" eventType="touchUpInside" id="XBJ-fg-qim"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="maingray.png" translatesAutoresizingMaskIntoConstraints="NO" id="e8q-M7-gg1">
+                    <rect key="frame" x="-47" y="367" width="97" height="107"/>
+                </imageView>
+                <button opaque="NO" tag="32" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMr-lJ-85k">
+                    <rect key="frame" x="59" y="367" width="97" height="107"/>
+                    <state key="normal" backgroundImage="mainlowblue.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionPressButton:" destination="F0G-S8-8ez" eventType="touchUpInside" id="d44-eT-BFf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="33" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIn-zQ-Fxu">
+                    <rect key="frame" x="165" y="367" width="97" height="107"/>
+                    <state key="normal" backgroundImage="mainlowblue.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionPressButton:" destination="F0G-S8-8ez" eventType="touchUpInside" id="V40-ub-tgi"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="maingray.png" translatesAutoresizingMaskIntoConstraints="NO" id="3Uz-qW-DG5">
+                    <rect key="frame" x="270" y="367" width="97" height="107"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="ffBut" destination="zIn-zQ-Fxu" id="eoJ-NJ-tOf"/>
+                <outlet property="fffBut" destination="En4-Q0-gva" id="eNF-On-mA9"/>
+                <outlet property="firBut" destination="PUR-sO-oQH" id="f10-BX-Dxw"/>
+                <outlet property="gbcpBut" destination="rAk-Si-rQF" id="qVo-C4-mTA"/>
+                <outlet property="headBut" destination="BEd-HG-oDN" id="CC1-sU-b1m"/>
+                <outlet property="jtpmBut" destination="6BP-q8-ZNR" id="UgG-WF-JYh"/>
+                <outlet property="ssBut" destination="47P-fB-u2R" id="bd9-NA-2dZ"/>
+                <outlet property="starBut" destination="SAJ-JJ-YMO" id="X8Y-XS-Eab"/>
+                <outlet property="ttBut" destination="OMr-lJ-85k" id="5GS-L6-lsX"/>
+                <outlet property="tzpjBut" destination="Odv-VO-utz" id="NKe-3T-Suh"/>
+                <outlet property="xlfdBut" destination="GMy-Ag-3Kd" id="ALE-BM-m6q"/>
+                <outlet property="zwdlBut" destination="hdE-gM-IHC" id="ocE-o2-x8W"/>
+            </connections>
+            <point key="canvasLocation" x="188" y="206"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="main_gbcp" width="97" height="107"/>
+        <image name="main_jkzd" width="97" height="107"/>
+        <image name="main_jtpm" width="97" height="107"/>
+        <image name="main_jtzy" width="97" height="107"/>
+        <image name="main_mjjt" width="97" height="107"/>
+        <image name="main_mjjt_s" width="97" height="107"/>
+        <image name="main_xlfd" width="97" height="107"/>
+        <image name="main_xlfd_s" width="97" height="107"/>
+        <image name="mainboyp.png" width="97" height="107"/>
+        <image name="maingray.png" width="97" height="107"/>
+        <image name="mainlowblue.png" width="97" height="107"/>
+    </resources>
+</document>

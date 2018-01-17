@@ -1,0 +1,126 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "JSONKit.h"
+#import "HttpDefine.h"
+#import "HttpInvokeEngine.h"
+
+#import "MobClick.h"
+#import "UMengDefine.h"
+#endif
+
+#ifdef DEBUG
+#define NBLog(format, ...) NSLog(format, ## __VA_ARGS__)
+#else
+#define NBLog(format, ...)
+#endif
+
+#define Screen_Width [[UIScreen mainScreen] applicationFrame].size.width
+#define Screen_Height [[UIScreen mainScreen] applicationFrame].size.height
+
+// 16进制
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+// 10进制
+#define ColorRGBA(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+
+#define IOS7_OR_LATER   ( [[[UIDevice currentDevice] systemVersion] compare:@"7.0"] != NSOrderedAscending )
+#define IOS8_OR_LATER   ( [[[UIDevice currentDevice] systemVersion] compare:@"8.0"] != NSOrderedAscending )
+
+#define iPhone5 ([UIScreen mainScreen].bounds.size.height == 568.f? YES: NO)
+#define iPhone4S ([UIScreen mainScreen].bounds.size.height == 480.f? YES: NO)
+
+/**
+ NSLineBreakMode, UILineBreakMode
+ */
+#define  LineBreakByWordWrapping     0
+#define  LineBreakByCharWrapping     1
+#define  LineBreakByClipping         2
+#define  LineBreakByTruncatingHead   3
+#define	 LineBreakByTruncatingTail   4
+#define  LineBreakByTruncatingMiddle 5
+
+/**
+ NSTextAlignment, UITextAlignment
+ */
+#define  TextAlignmentLeft   0
+#define	 TextAlignmentCenter 1
+#define	 TextAlignmentRight  2
+
+/******************************************************************************
+ *如果左值不为nil或0.而右值为nil或0，将不进行赋值
+ *
+ ******************************************************************************/
+#define IgnoreNullAssign(lvalue,rvalue) \
+while(ParseObject(rvalue) != nil && (lvalue) != ParseObject(rvalue))(lvalue) = ParseObject(rvalue);
+
+#define IgnoreZeroAssign(lvalue,rvalue) \
+while(ParseInt(rvalue) != 0){(lvalue) = ParseInt(rvalue);break;}
+
+#define ParseObject(x) ((x)==[NSNull null]?nil:(x))
+#define ParseBool(x)   ((x)==[NSNull null]?NO:([x boolValue]))
+#define ParseInt(x)    ((x)==[NSNull null]?0:([x intValue]))
+#define ParseFloat(x)  ((x)==[NSNull null]?0.0:([x floatValue]))
+#define ParseStr(x)    [ParseObject(x) length]==0?nil:ParseObject(x)
+
+//nslog
+#define _po(o) NSLog(@"%@", (o))
+#define _pn(o) NSLog(@"%d", (o))
+#define _pf(o) NSLog(@"%f", (o))
+#define _ps(o) NSLog(@"CGSize: {%.0f, %.0f}", (o).width, (o).height)
+#define _pr(o) NSLog(@"NSRect: {{%.0f, %.0f}, {%.0f, %.0f}}", (o).origin.x, (o).origin.x, (o).size.width, (o).size.height)
+#define DOBJ(obj) NSLog(@"%s: %@", #obj, [(obj) description])
+
+#define WXAPPID     @"wx27253b30608a939d"
+#define WXAPPSECRET @"e8c79be416d805e63c8b6eb75e32f298"
+
+//NSUserDefaults
+#define InvitationCode @"InvitationCode"   //邀请码
+#define MACNumber      @"MACNumber"        //设备唯一标识符
+
+#define FirstLogin     @"FirstLogin"       //第一次登陆
+#define USERID         @"USERID"           //用户ID作为唯一标识
+
+#define MobleNumber    @"MobleNumber"      //登陆用户账号
+#define MoblePassword  @"MoblePassword"    //登陆用户密码
+
+#define LoginUserGender    @"LoginUserGender"    //登录用户的性别  用于setting中的默认头像
+#define LoginUserHead      @"LoginUserHead"      //登录用户的头像  用于setting中的默认头像
+#define LoginUserNickName  @"LoginUserNickName"  //登录用户的昵称  用于setting中的默认头像
+
+#define RecipeVersion   @"RecipeVersion"   //科学运动知道版本
+
+//以下两种情况 回到主界面要刷新界面
+#define AddNewBabySuccess @"AddNewBabySuccess"
+
+
+//SFHFKeychainUtils
+#define USERNAME    @"hankang"
+#define ServiceName @"samples.fitnessII.hankang"
+
+
+#define TEXT_PBZC @"1、请将手机正面向上平放于面前地上\n2、用脚趾和前臂支撑体重，始终保持身体挺直，点击“GO”计时；结束后点击“滑动来保存”结束计时"
+#define TEXT_YWQZ @"1、平躺，手机正面向上置于颈部以下的地面上，双手交叉于胸前\n2、动作以“上至肩胛骨离开地面，下至肩胛骨平贴地面”计为一次"
+#define TEXT_FWC  @"1、请将手机正面向上平放于面前地面上\n2、动作以“身体下降至脸部接近手机屏幕后再撑起”为一次"
+#define TEXT_SD   @"启用横屏模式，双手持手机，正对屏幕，双臂始终伸直平举，然后做深蹲动作计数。"
+
+
+#define UMENG_KEY @"569c9f0be0f55ae22a0006b4"
+#define UMENG_APP_Master_Secret @"kbhm0wtqmmomlnk6jt0yjigxfcpd2kch"
+
+#define SINGLE_LINE                 (1 / [UIScreen mainScreen].scale)
+#define SINGLE_LINE_ADJUST_OFFSET   ((1 / [UIScreen mainScreen].scale) / 2)
+
+
+
+
